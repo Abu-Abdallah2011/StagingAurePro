@@ -28,7 +28,7 @@ class UserFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => '$2y$12$RcdM3YAi0fkvvv8xWd3kKupF16br76QwEZ0S58eNu8tgaqEYPZqwO',
-            'role' => 'admin',
+            'role' => 'super_admin',
             'remember_token' => Str::random(10),
         ];
     }
