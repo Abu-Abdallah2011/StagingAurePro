@@ -21,7 +21,7 @@
                             @if (Gate::allows('isAdmin'))
                             <div>
                                 <x-input-label for="user_id" :value="__('User Id')" />
-                                <x-text-input id="user_id" class="block mt-1 w-full hidden" type="text" name="user_id" value="{{ $userId }}" required autofocus autocomplete="user_id" />
+                                <x-text-input id="user_id" class="block mt-1 w-full" type="text" name="user_id" value="{{ $userId }}" required autofocus autocomplete="user_id" />
                                 <x-input-error :messages="$errors->get('user_id')" class="mt-2" />
                             </div>
                             @else
