@@ -73,7 +73,7 @@ public function view($id) {
     $wifemarriages = $wife->wifeMarriages;
 
     if(Gate::allows('isAdmin') || $userProfile->id == $id) {
-    return view('profiles.single_profile', compact('profile', 'husbandmarriages', 'wifemarriages', 'users', 'marriages'));
+    return view('Profiles.single_profile', compact('profile', 'husbandmarriages', 'wifemarriages', 'users', 'marriages'));
     }
     else{
         abort(403, 'Unauthorized access.');
